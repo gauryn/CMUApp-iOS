@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gOJ-DV-K2H">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FNc-qb-T3M">
+            <objects>
+                <viewController id="8uD-kw-oFV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KbL-Ad-yI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAc-jj-sxg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0K-cr-EU1">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-fY-phS">
+                                <rect key="frame" x="80" y="136" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">CMU App, designed and developed by Jake Correa for Android and Gaury Nagaraju for iOS as part of Student Government President, JR Marshall's initiative.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5Jj-fY-phS" firstAttribute="top" secondItem="KbL-Ad-yI5" secondAttribute="bottom" constant="116" id="E0X-p9-Cqz"/>
+                            <constraint firstItem="5Jj-fY-phS" firstAttribute="centerX" secondItem="i0K-cr-EU1" secondAttribute="centerX" id="TAg-17-Qr6"/>
+                            <constraint firstItem="5Jj-fY-phS" firstAttribute="centerY" secondItem="i0K-cr-EU1" secondAttribute="centerY" id="bUJ-bc-DX4"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="400"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G52-OA-Wd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3627" y="-211"/>
+        </scene>
+        <!--Direct View Controller-->
+        <scene sceneID="G9b-01-MvV">
+            <objects>
+                <viewController id="gOJ-DV-K2H" customClass="DirectViewController" customModule="CMU_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fnx-JF-rzM"/>
+                        <viewControllerLayoutGuide type="bottom" id="X3f-jy-uhD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TFM-eG-Rhz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbs-EY-uML">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eIO-J5-bQO">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VuE-Vm-6vO">
+                                            <size key="itemSize" width="100" height="100"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppItemCell" id="4I7-UR-IVL" customClass="AppItemCollectionViewCell" customModule="CMU_App" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOM-Zn-qn4">
+                                                            <rect key="frame" x="0.0" y="75" width="100" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="n79-yw-4oe"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="L1H-D3-rVM">
+                                                            <rect key="frame" x="12" y="8" width="76" height="64"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="DOM-Zn-qn4" secondAttribute="trailing" id="2AC-0k-dD0"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="DOM-Zn-qn4" secondAttribute="bottom" constant="-4" id="7MM-EX-mag"/>
+                                                    <constraint firstItem="L1H-D3-rVM" firstAttribute="top" secondItem="4I7-UR-IVL" secondAttribute="topMargin" id="7ww-6k-Dy2"/>
+                                                    <constraint firstItem="DOM-Zn-qn4" firstAttribute="top" secondItem="L1H-D3-rVM" secondAttribute="bottom" constant="3" id="AHQ-kX-p5y"/>
+                                                    <constraint firstItem="DOM-Zn-qn4" firstAttribute="leading" secondItem="4I7-UR-IVL" secondAttribute="leading" id="FJh-rN-uXw"/>
+                                                    <constraint firstItem="DOM-Zn-qn4" firstAttribute="centerX" secondItem="L1H-D3-rVM" secondAttribute="centerX" id="d5J-VA-65d"/>
+                                                    <constraint firstItem="L1H-D3-rVM" firstAttribute="leading" secondItem="4I7-UR-IVL" secondAttribute="leadingMargin" constant="4" id="eVc-WN-amf"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="appItemName" destination="DOM-Zn-qn4" id="XzT-b4-hiI"/>
+                                                    <outlet property="photoImageView" destination="L1H-D3-rVM" id="rEO-5q-Cyx"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="gOJ-DV-K2H" id="YeF-QS-aZQ"/>
+                                            <outlet property="delegate" destination="gOJ-DV-K2H" id="xQv-fo-I4V"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTu-1E-1FR" customClass="TartanFooter" customModule="CMU_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV9-oH-ZIe">
+                                                <rect key="frame" x="213" y="13" width="175" height="174"/>
+                                                <state key="normal" image="tartans_logo"/>
+                                                <connections>
+                                                    <segue destination="8uD-kw-oFV" kind="popoverPresentation" identifier="popoverSegue" popoverAnchorView="fV9-oH-ZIe" id="VjL-er-G6J">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="fV9-oH-ZIe" firstAttribute="width" secondItem="zTu-1E-1FR" secondAttribute="height" multiplier="7:8" id="rzU-pd-VQ9"/>
+                                            <constraint firstItem="fV9-oH-ZIe" firstAttribute="centerY" secondItem="zTu-1E-1FR" secondAttribute="centerY" id="uiT-fC-mY6"/>
+                                            <constraint firstItem="fV9-oH-ZIe" firstAttribute="centerX" secondItem="zTu-1E-1FR" secondAttribute="centerX" id="ysK-pV-f6E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zTu-1E-1FR" firstAttribute="width" secondItem="Rbs-EY-uML" secondAttribute="width" id="FNJ-sG-jd0"/>
+                                    <constraint firstItem="eIO-J5-bQO" firstAttribute="width" secondItem="Rbs-EY-uML" secondAttribute="width" id="bzx-x3-noH"/>
+                                    <constraint firstItem="zTu-1E-1FR" firstAttribute="height" secondItem="eIO-J5-bQO" secondAttribute="height" multiplier="1/2" id="jQ2-wo-uwv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eIO-J5-bQO" firstAttribute="width" secondItem="TFM-eG-Rhz" secondAttribute="width" id="9Rx-dB-94x"/>
+                            <constraint firstItem="X3f-jy-uhD" firstAttribute="top" secondItem="zTu-1E-1FR" secondAttribute="bottom" id="NRr-tD-Qph"/>
+                            <constraint firstItem="Rbs-EY-uML" firstAttribute="top" secondItem="Fnx-JF-rzM" secondAttribute="bottom" constant="-20" id="g65-3H-JLh"/>
+                            <constraint firstItem="Rbs-EY-uML" firstAttribute="width" secondItem="TFM-eG-Rhz" secondAttribute="width" id="v5I-VQ-tb3"/>
+                            <constraint firstItem="Rbs-EY-uML" firstAttribute="height" secondItem="TFM-eG-Rhz" secondAttribute="height" id="ydw-sm-ibh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appIcons" destination="eIO-J5-bQO" id="JF4-Fd-W2q"/>
+                        <outlet property="mainStack" destination="Rbs-EY-uML" id="iUJ-uf-J9T"/>
+                        <outlet property="tartanFooter" destination="zTu-1E-1FR" id="hTo-1S-Nzb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Orw-6w-22q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4289" y="-260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+        <image name="tartans_logo" width="175" height="174"/>
+    </resources>
+</document>

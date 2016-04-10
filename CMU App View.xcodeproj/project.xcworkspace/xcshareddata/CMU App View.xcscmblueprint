@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6B2053A5049E86FFA7352B22D2E1B6AD69FF33C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E5EBB91E075BDA4E23B407F0CB555257CDAB4C65" : 0,
+    "6B2053A5049E86FFA7352B22D2E1B6AD69FF33C0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "23231EBF-C77D-4A2B-9485-1ADA50F9466B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E5EBB91E075BDA4E23B407F0CB555257CDAB4C65" : "temp\/CMUApp-iOS\/",
+    "6B2053A5049E86FFA7352B22D2E1B6AD69FF33C0" : "CMU%20App%20View\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CMU App View",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CMU App View\/CMU App View.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cmu-student-government\/CMUApp-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6B2053A5049E86FFA7352B22D2E1B6AD69FF33C0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gauryn\/CMUApp-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E5EBB91E075BDA4E23B407F0CB555257CDAB4C65"
+    }
+  ]
+}

@@ -20,7 +20,6 @@
 		92423EE01CBAFD5600A9EFFE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92423EDF1CBAFD5600A9EFFE /* Bolts.framework */; };
 		92423EE21CBAFD6700A9EFFE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92423EE11CBAFD6700A9EFFE /* Parse.framework */; };
 		92423EE41CBAFD6D00A9EFFE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92423EE31CBAFD6D00A9EFFE /* ParseUI.framework */; };
-		9252D7F51C559E85000B9D6A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9252D7F41C559E85000B9D6A /* Launch Screen.storyboard */; };
 		92759F011C49398000720210 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92759F001C49398000720210 /* libz.tbd */; };
 		92759F031C4939B300720210 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92759F021C4939B300720210 /* libsqlite3.tbd */; };
 		92B796D41C346C8700E76B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B796D31C346C8700E76B29 /* AppDelegate.swift */; };
@@ -57,7 +56,6 @@
 		92423EDF1CBAFD5600A9EFFE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		92423EE11CBAFD6700A9EFFE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		92423EE31CBAFD6D00A9EFFE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		9252D7F41C559E85000B9D6A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		92759F001C49398000720210 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		92759F021C4939B300720210 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		92759F041C49864900720210 /* CMU App View-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMU App View-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				92423ED31CBAFBF100A9EFFE /* CoreGraphics.framework */,
 				92423ED11CBAFBE700A9EFFE /* CFNetwork.framework */,
 				92423ECF1CBAFBDD00A9EFFE /* AudioToolbox.framework */,
-				9252D7F41C559E85000B9D6A /* Launch Screen.storyboard */,
 				92759F021C4939B300720210 /* libsqlite3.tbd */,
 				92759F001C49398000720210 /* libz.tbd */,
 				92B796D21C346C8700E76B29 /* CMU App View */,
@@ -246,7 +243,6 @@
 			files = (
 				92B797051C47261900E76B29 /* Launch Screen.storyboard in Resources */,
 				92B796DB1C346C8700E76B29 /* Assets.xcassets in Resources */,
-				9252D7F51C559E85000B9D6A /* Launch Screen.storyboard in Resources */,
 				92B796D91C346C8700E76B29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

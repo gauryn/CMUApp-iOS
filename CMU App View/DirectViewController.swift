@@ -49,6 +49,8 @@ class DirectViewController: UIViewController, UIPopoverPresentationControllerDel
         
     }
     
+    
+    
     override func viewDidLayoutSubviews() {
         
         super.viewDidLayoutSubviews()
@@ -60,7 +62,8 @@ class DirectViewController: UIViewController, UIPopoverPresentationControllerDel
         
         let backgroundRect = mainStack.frame
         let bgView = UIView(frame: backgroundRect)
-        bgView.backgroundColor = UIColor(red: 0.59999999999999998, green: 0.0, blue: 0.0, alpha: 0.59999999999999998)
+        // used UIColor converter (hex to UIColor): http://uicolor.xyz/#/hex-to-ui 
+        bgView.backgroundColor = UIColor(red: 0.6, green: 0.0, blue: 0.0, alpha: 1)
         
         self.mainStack.insertSubview(bgView, atIndex: 0)
         

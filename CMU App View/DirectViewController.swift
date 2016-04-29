@@ -112,7 +112,8 @@ class DirectViewController: UIViewController, UIPopoverPresentationControllerDel
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! AppItemCollectionViewCell
         
         // Fetches the appropriate appItem for the data source layout.
-        let appItem = appItems[indexPath.item]
+        let appItem = appItems[indexPath.item] as! [String:AnyObject]
+        print("appItem: ", appItem)
         
         // Configure the cell
         cell.photoImageView.layer.cornerRadius = 10.0
@@ -136,7 +137,7 @@ class DirectViewController: UIViewController, UIPopoverPresentationControllerDel
     
     // MARK: UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let appItem = appItems[indexPath.item]
+        let appItem = appItems[indexPath.item] as! [String:AnyObject]
         var link = String()
         if(appItem["type"] as! String == "url"){
             link = (appItem["link_alt"] as? String)!

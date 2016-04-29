@@ -44,10 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidFinishLaunching(application: UIApplication) {
         Parse.setApplicationId("HMGOiKhC3BOLG2hRxqZSDHAl2OehygS0JIocuMop", clientKey: "nMIlA0lE86CcX5ywn6comymPtP4D5svNumRlbIsp")
-        
+
         
     }
-
+    
 
 }
 

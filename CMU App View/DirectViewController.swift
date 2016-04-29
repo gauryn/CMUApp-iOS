@@ -20,11 +20,13 @@ class DirectViewController: UIViewController, UIPopoverPresentationControllerDel
     var appItems = []
     
     func changeTitleBarColor(){
-        //self.view.backgroundColor = UIColor.blackColor()
-        //self.view.tintColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.blackColor()
         
-        
-        
+    }
+    
+    // makes text on statusBar white
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     override func viewDidLoad() {

@@ -19,11 +19,22 @@ class DirectViewController: UIViewController, UIPopoverPresentationControllerDel
     
     var appItems = []
     
+    func changeTitleBarColor(){
+        //self.view.backgroundColor = UIColor.blackColor()
+        //self.view.tintColor = UIColor.whiteColor()
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         loadAppItems()
+        
+        // invert title bar color from white to black
+        changeTitleBarColor()
         
         self.view.addSubview(appIcons)
         
